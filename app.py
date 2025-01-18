@@ -12,7 +12,6 @@ def load_models():
     rf_model = joblib.load('model/random_forest_model.pkl')
     return linear_model, lasso_model, ridge_model, elastic_model, svr_model, rf_model
 
-
 def load_transformers():
     encoder = joblib.load('model/encoder.pkl')
     x_scaler = joblib.load('model/x_scaler.pkl')
@@ -63,7 +62,8 @@ input_data = pd.DataFrame({
 
 preprocessed_input = preprocess_data(input_data, encoder, x_scaler)
 
-model_option = st.selectbox("Select a model", ("LinearRegression", "Lasso", "Ridge", "ElasticNet", "SVR", "RandomForestRegressor"))
+st.markdown("## **Select a model**") 
+model_option = st.selectbox("", ("LinearRegression", "Lasso", "Ridge", "ElasticNet", "SVR", "RandomForestRegressor"))
 
 def predict_model(model, data):
     prediction = model.predict(data)
@@ -82,4 +82,5 @@ elif model_option == "SVR":
 elif model_option == "RandomForestRegressor":
     prediction = predict_model(rf_model, preprocessed_input)
 
-st.write(f"Predicted Rent Amount (R$): {prediction}")
+prediction = round(prediction, 2)
+st.write(f"**Predicted Rent Amount (R$)**: {prediction}")
