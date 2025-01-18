@@ -6,7 +6,7 @@ authors = ["MariiaSam <kontragent@ukr.net>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.11.9"
 numpy = "^2.2.1"
 joblib = "^1.4.2"
 streamlit = "^1.41.1"
