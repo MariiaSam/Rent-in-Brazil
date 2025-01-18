@@ -151,7 +151,7 @@ Random Forest Regressor надмірно підганяє навчальні д�
 
 ```
 git clone https://github.com/MariiaSam/Rent-in-Brazil.git
-cd RENT-IN-BRAZIL
+cd Rent-in-Brazil
 ```
 
 2. **Налаштування середовища за допомогою Poetry:**
