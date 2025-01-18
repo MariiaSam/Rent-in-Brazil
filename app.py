@@ -14,11 +14,13 @@ def load_models():
     ridge_model = joblib.load('model/ridge_model.pkl')
     elastic_model = joblib.load('model/elastic_model.pkl')
     svr_model = joblib.load('model/svr_model.pkl')
+    rf_model = joblib.load('model/random_forest_model.pkl')
+
     
-    with zipfile.ZipFile('model/random_forest_model.zip', 'r') as zip_ref: 
-        zip_ref.extractall('model/random_forest_model')
+    # with zipfile.ZipFile('model/random_forest_model.zip', 'r') as zip_ref: 
+    #     zip_ref.extractall('model/random_forest_model')
     
-    rf_model =  joblib.load('model/random_forest_model/random_forest_model (2).pkl')
+    # rf_model =  joblib.load('model/random_forest_model/random_forest_model (2).pkl')
     
     
     return linear_model,  lasso_model,   ridge_model,  elastic_model, svr_model, rf_model
