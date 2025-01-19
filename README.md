@@ -1,122 +1,118 @@
 # Rent in Brazil
 
-# Модель прогнозування вартості оренди в Бразилії
+# A model for predicting the cost of rent in Brazil
 
-Цей проєкт розроблено для визначення вартості оренди в Бразилії. Інтерактивний інтерфейс створений на основі [**Streamlit**](https://rent-mariisam.streamlit.app), що дозволяє легко взаємодіяти з моделлю та аналізувати результати.
+This project was developed to determine the cost of rent in Brazil. The interactive interface is based on [**Streamlit**] (https://rent-mariisam.streamlit.app), which allows you to easily interact with the model and analyze the results.
 
-<img src="images/4.jpg" alt="Опис зображення" width="500" height="300">
+<img src=“images/4.jpg” alt=“Image description” width=“500” height=“300”>
 
-## Опис
+## Description.
 
-**1. Мета проєкту:** створити аналітичний інструмент для дослідження вартості ренти в Бразилії, що включає різні фактори, в тому числі регіони.
+**1. Project objective:** To create an analytical tool for researching the value of rents in Brazil, including various factors, including regions.
 
-**2. Завдання проєкту:**
+**2. Project tasks:**.
 
-- **аналіз даних:** визначити ключові фактори, що впливають на вартість;
-- **побудова моделей:** використовуючи методи машинного навчання та статистичні аналізи, створити модель, яка зможе прогнозувати вартість ренти;
-- **iнтерфейс користувача:** розробити інтерактивний інтерфейс, що дозволить користувачам вводити нові дані, аналізувати результати та робити прогнози на основі моделі.
+- Data analysis:\*\* to identify the key factors that influence the cost;
+- Model building:\*\* using machine learning and statistical analyses to create a model that can predict rental values;
+- User interface:\*\* develop an interactive interface that will allow users to enter new data, analyze the results and make predictions based on the model.
 
-## Технології
+## Technologies.
 
-**Проєкт реалізовано з використанням таких технологій:**
+The project was implemented using the following technologies:
 
-- **Python**: основна мова програмування;
-- **Docker Compose**: для спрощення процесу розгортання та управління проєктом у середовищі Docker.
+- **Python**: the main programming language;
+- **Docker Compose**: to simplify the process of deploying and managing the project in the Docker environment.
 
-## Бібліотеки
+## Libraries
 
-- **Pandas**: для обробки даних;
-- **Numpy**: для числових обчислень;
-- **Scikit-learn**: для побудови та оцінки моделей машинного навчання;
-- **Matplotlib** та **Seaborn**: для візуалізації даних;
-- **Streamlit**: для створення інтерактивного інтерфейсу;
-- **Joblib**: для ефективного серіалізування (збереження) та завантаження об'єктів Python.
+- **Pandas**: for data processing;
+- Numpy: for numerical calculations;
+
+- **Scikit-learn**: for building and evaluating machine learning models;
+- **Matplotlib** and **Seaborn**: for data visualization;
+- **Streamlit**: for creating an interactive interface;
+- **Joblib**: for efficient serialization (saving) and loading of Python objects.
 
 ## Dataset
 
-**Для цього проєкту використовувався набір даних із такими характеристиками:**
+**The dataset used for this project has the following characteristics:**
 
 - **https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset**
-- формат: `.csv`;
-- містить такі ключові стовпці: `city`, `rent amount `, `bill_avg`, `parking spaces`, тощо.
+- format: `.csv`;
+- contains the following key columns: `city`, `rent amount`, `bill_avg`, `parking spaces`, etc.
 
-Цей набір даних містить 10692 об'єкти оренди з 13 різними характеристиками:
+This dataset contains 10692 rental properties with 13 different characteristics:
 
-- **city**: місто, в якому знаходиться об'єкт;
-- **area**: площа об'єкта нерухомості;
-- **rooms**: кількість кімнат;
-- **bathroom**: кількість ванних кімнат;
-- **parking spaces**: кількість паркувальних місць;
-- **floor**: поверх;
-- **animals**: дозвіл на проживання з тваринами;
-- **furniture**: меблі;
-- **hoa (R$)**: податок на асоціацію власників житла;
-- **rent amount (R$)**: розмір орендної плати;
-- **property tax**: податок на муніципальне майно;
-- **fire insurance (R$)**: вартість страхування від пожежі;
-- **total (R$)**: загальна сума всіх значень.
+- **city**: the city in which the property is located;
+- **area**: area of the property;
+- **rooms**: number of rooms;
+- **bathroom**: number of bathrooms;
+- **parking spaces**: number of parking spaces;
+- **floor**: floor;
+- **animals**: permission to stay with animals;
+- **furniture**: furniture;
+- **hoa (R$)** : homeowners association tax;
+- **rent amount (R$)**: the amount of rent;
+- **property tax**: Municipal property tax;
+- **fire insurance (R$)**: the cost of fire insurance;
+- **total (R$)**: the total sum of all values.
 
-## Вартість оренди в залежності від кількості кімнат
+## The cost of renting an apartment depending on the number of rooms
 
 ![Вартість оренди в залежності від кількості кімнат](images/1.png)
 
-## Вартість оренди в залежності від міста
+## Rental housing costs depending on the city
 
-![Вартість оренди житла в залежності від міста](images/2.png)
+![Rental housing costs depending on the city](images/2.png)
 
-✅ **_У Сан-Паулу середня вартість оренди житла вища, ніж в інших містах._**
+✅ **_In São Paulo, the average cost of rent is higher than in other cities._**
+**_And this is not surprising, as it is the center of a large agglomeration with a population of 23 million, also one of the largest in the world._**
 
-**_І це не дивно, адже він є центром великої агломерації з населенням 23 мільйони, також однієї з найбільших у світі._**
+## Correlation analysis conclusions for rent amount:
 
-## Кореляційний аналіз для розміру орендної плати
+![Correlation analysis conclusions for rent amount::](images/3.png)
 
-![Кореляційний аналіз для розміру орендної плати:](images/3.png)
+# **_Correlation analysis conclusions for rent amount:_**
 
-**_Висновки кореляційного аналізу для розміру орендної плати:_**
+**_Strong positive relationship_**: Variables that are highly positively correlated with rent amount have a direct relationship. That is, when the value of these variables increases, the rent also increases.
 
-**_Сильний позитивний зв'язок_**: змінні, які мають сильну позитивну кореляцію з розміром орендної плати, мають прямий зв'язок. Тобто, коли значення цих змінних зростає, орендна плата також зростає.
+- **fire insurance (0.987)**: Very strong correlation with rent amount. This is expected as the amount of insurance can be proportional to the rent.
 
-- **fire insurance (0,987)**: дуже сильна кореляція з розміром орендної плати. Це очікувано, оскільки сума страховки може бути пропорційною до орендної плати.
+- **bathrooms (0.666)**: Having more bathrooms is associated with higher rents. This indicates that living spaces with more amenities are more expensive.
 
-- **bathrooms(0,666)**: наявність більшої кількості ванних кімнат асоціюється з вищою орендною платою. Це вказує на те, що житло з більшою кількістю зручностей коштує дорожче.
+- **parking spaces (0.574)**: Housing with parking spaces has higher rents, as it is often a sign of luxury or convenience.
 
-- **parking spaces (0,574)**: житло з паркувальними місцями має вищу орендну плату, оскільки це часто є ознакою розкоші або зручності.
+- **rooms (0.537)**: A larger number of rooms is also associated with higher rents, which is consistent with the logic of larger areas.
 
-- **rooms (0,537)**: більша кількість кімнат також асоціюється з вищою орендною платою, що відповідає логіці більших площ.
+- **City São Paulo (0.25)**: Location strongly influences higher rents.
 
-- **City São Paulo (0,25)**: розташування сильно впливає на вищі орендні ставки.
+**_Weak positive relationship_**:
 
-**_Слабкий позитивний зв'язок_**:
+- **area (0.178)**: Area has a moderate positive correlation, but is not a key factor. This may indicate that a larger area does not always mean significantly higher rents.
 
-- **area (0,178)**: площа має помірну позитивну кореляцію, але не є ключовим фактором. Це може свідчити про те, що більша площа не завжди означає значно вищу орендну плату.
+- **property tax (0.107)**: Property tax has a weak impact. It is probably taken into account by property owners, but is not a direct indicator of rents.
 
-- **property tax(0,107)**: податок на нерухомість має слабкий вплив. Він, ймовірно, враховується власниками нерухомості, але не є прямим індикатором орендної плати.
+**_Almost neutral impact:_**
 
-**_Майже нейтральний вплив:_**.
+- **floor (0.071)**: Floor has a very weak impact on rents, which may depend on the city and the architecture of the buildings.
 
-- **floor (0,071)**: поверх має дуже слабкий вплив на орендну плату, що може залежати від міста та архітектури будинків.
+- **animal accept (0.06)**: Minor impacts on rent levels.
 
-- **(animal accept0,06)**: Незначний вплив на рівень орендної плати.
+- **hoa (0.052)**: Small relationship with homeowners' association fees. This may only affect certain types of housing (e.g., apartments in condominiums).
 
-- **hoa (0,052)**: невеликий зв'язок із внесками hoa. Це може впливати лише на певні типи житла (наприклад, квартири в hoa (ОСББ)).
+**_Negative correlation_**: Variables with a negative correlation have an inverse relationship, i.e., when the value of the variable increases, the rent decreases.
 
-**_Негативна кореляція_**: змінні з від'ємною кореляцією мають обернений зв'язок, тобто, коли значення змінної збільшується, орендна плата зменшується.
+- **animal_not_accept (-0.06)**: In premises where animals are not allowed, rents are slightly lower.
 
-**animal_not_accept (-0,06)**: у приміщеннях, де тварини не допускаються, орендна плата є дещо нижчою.
+- **furniture_not furnished (-0.17)**: Show an inverse relationship, possibly due to tenant preferences.
 
-- **furniture_not furnished (-0,17)**: демонструють обернений зв'язок, можливо, через вподобання орендарів.
-
-Міста, наприклад, city_Belo Horizonte, city_Campinas: у містах з негативною кореляцією з розміром орендної плати орендні ставки можуть бути нижчими порівняно з базовими містами (наприклад, city_São Paulo).
-
-# **_Загальний висновок:_**
-
-Орендна плата в першу чергу залежить від ключових характеристик нерухомості (ванні кімнати, парковка, кімнати), місця розташування (Сан-Паулу) та додаткових витрат (страхування). Інші фактори, такі як меблювання та політика щодо домашніх тварин, мають слабший вплив, але все ще є важливими для цільового аналізу.
+Cities, for example, city_Belo Horizonte, city_Campinas: In cities with a negative correlation with rent amount, rents may be lower compared to the base cities (e.g. city_São Paulo).
 
 ## Модель
 
-- в проекті було випробувано такі моделі як: **LinearRegression, Lasso, Ridge, ElasticNet, SVR, RandomForestRegressor**
+- the following models were tested in the project: **LinearRegression, Lasso, Ridge, ElasticNet, SVR, RandomForestRegressor**
 
-- для підбору найкращих гіперпараметрів використовувався: GridSearchCV.
+- was used to select the best hyperparameters: GridSearchCV.
 
 # Порівняння моделей:
 
@@ -135,54 +131,54 @@
 | Elastic Net (Train)             | 294.810219 | 2.231826e+05 | 472.422034  | 0.980796 |
 | Elastic Net (Test)              | 294.810219 | 2.231826e+05 | 472.422034  | 0.980796 |
 
-**_Порівняння та висновки_**
+# **_Comparisons and conclusions_**
 
-❎ **_Найкраща модель:_**
+❎ **_Best Model:_**
 
-**Lasso Regression** пропонує найкращий баланс між тренуванням і результатами тестування, уникаючи надмірного пристосування, зберігаючи при цьому сильну пояснювальну силу.
+**Lasso Regression** offers the best balance between training and test performance, avoiding overfitting while maintaining strong explanatory power.
 
-⭕ **_Найгірша модель:_**
+⭕ **_Worst Model:_**
 
-Random Forest Regressor надмірно підганяє навчальні дані, що призводить до найвищих помилок при тестуванні та зниженої узагальнюваності. Він може потребувати налаштування гіперпараметрів для покращення своєї продуктивності.
+Random Forest overfits the training data, with the highest test errors and reduced generalizability. It may require hyperparameter tuning to improve its performance.
 
-## Запуск локально
+## Run locally
 
-1. **Клонування репозиторію:**
+1. **Clone the repository:**
 
 ```
 git clone https://github.com/MariiaSam/Rent-in-Brazil.git
 cd Rent-in-Brazil
 ```
 
-2. **Налаштування середовища за допомогою Poetry:**
+2. **Set up the virtual environment with Poetry**
 
-Встановіть залежності проєкту:
+Set up project dependencies:
 
 ```
 poetry install
 ```
 
-Для активації віртуального середовища необхідно виконати команду:
+To activate the virtual environment, run the command:
 
 ```
 poetry shell
 ```
 
-Щоб додати до проекту залежність, необхідно виконати команду
+To add a dependency to a project, run the command:
 
 ```
-poetry add <назва_пакету>
+poetry add <package_name>
 ```
 
-Для підтягування існуючих залежностей:
+To pull in existing dependencies:
 
 ```
 poetry install
 ```
 
-# Використання
+# Using
 
-Запустіть Streamlit-додаток командою:
+Run the Streamlit application with the command:
 
 ```
 streamlit run app.py
