@@ -132,9 +132,21 @@ Cities, for example, city_Belo Horizonte, city_Campinas: In cities with a negati
 
 # **_Comparisons and conclusions_**
 
-❎ **_Best Model:_**
+Model evaluation is based on several metrics: MAE (Mean Absolute Error), MSE (Mean Squared Error), RMSE (Root Mean Squared Error), and R² (coefficient of determination). The best model can be chosen depending on the purpose of the analysis, but in general, lower errors (MAE, MSE, RMSE) and higher R² indicate a better model.
 
-**Lasso Regression** offers the best balance between training and test performance, avoiding overfitting while maintaining strong explanatory power.
+❎ **_Best model:_**
+
+**Best model: Elastic Net**. Why:
+
+High R² on training (0.9808) and test (0.9808) data.
+The lowest RMSE on the test data (472.42), indicating the best fit to real-world values.
+
+Elastic Net balances the regularization, avoiding overfitting.
+
+**Alternative model: Lasso Regression**. Why:
+The second best R² on the test data (0.9686).
+Low RMSE (627.63), which also indicates good consistency.
+Less sensitive to collinearity than simple linear regression.
 
 ⭕ **_Worst Model:_**
 
