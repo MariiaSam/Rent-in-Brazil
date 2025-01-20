@@ -195,34 +195,44 @@ Run the Streamlit application with the command:
 streamlit run app.py
 ```
 
-<!-- # Docker
+# Docker
 
-Цей проєкт також підтримує Docker-контейнеризацію, що дозволяє легко запускати додаток без необхідності налаштовувати середовище вручну.
+This project also supports Docker containerization, which makes it easy to run the application without having to manually configure the environment.
 
-## Запуск за допомогою Docker:
+**1. Starting a project via Docker**
 
-1. **Запуск проекту за допомогою Docker Compose**
-
-У кореневій директорії проекту виконайте команду:
+Use the command to run a container based on your Docker Image:
 
 ```
-docker compose up
+docker run --rm -d -p 8880:8880 rentinbrazil:latest
 ```
 
-2. **Доступ до додатку:**
+--rm - automatically removes the container after stopping;
 
-Після успішного запуску додаток буде доступний за адресою:
+-d - runs the container in the background;
 
-```
-http://localhost:8501
-```
+-p 8880:8880 - displays port 8880 on the local machine to access the application.
 
-3. **Зупинка проекту:**
+**2. Access to the application:**
 
-Щоб зупинити проект, виконайте:
+After starting the container, the application will be available at the address:
 
 ```
-docker compose down
+http://localhost:8880
 ```
 
-Ця команда зупинить усі сервіси та видалить створені контейнери. -->
+3. **Stopping the project:**
+
+To stop the project, do:
+
+```
+docker ps
+```
+
+Then use the command to stop the container:
+
+```
+docker stop <container_id>
+```
+
+Where <container_id> is your container's identifier, obtained from the docker ps command.
