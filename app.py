@@ -4,18 +4,18 @@ import pandas as pd
 import streamlit as st
 
 def load_models():
-    linear_model = joblib.load('../model/linear_regression_model.pkl')
-    lasso_model = joblib.load('../model/lasso_model.pkl')
-    ridge_model = joblib.load('../model/ridge_model.pkl')
-    elastic_model = joblib.load('../model/elastic_model.pkl')
-    svr_model = joblib.load('../model/svr_model.pkl')
-    rf_model = joblib.load('../model/random_forest_model.pkl')
+    linear_model = joblib.load('model/linear_regression_model.pkl')
+    lasso_model = joblib.load('model/lasso_model.pkl')
+    ridge_model = joblib.load('model/ridge_model.pkl')
+    elastic_model = joblib.load('model/elastic_model.pkl')
+    svr_model = joblib.load('model/svr_model.pkl')
+    rf_model = joblib.load('model/random_forest_model.pkl')
     return linear_model, lasso_model, ridge_model, elastic_model, svr_model, rf_model
 
 def load_transformers():
-    encoder = joblib.load('../model/encoder.pkl')
-    x_scaler = joblib.load('../model/x_scaler.pkl')
-    y_scaler = joblib.load('../model/y_scaler.pkl')
+    encoder = joblib.load('model/encoder.pkl')
+    x_scaler = joblib.load('model/x_scaler.pkl')
+    y_scaler = joblib.load('model/y_scaler.pkl')
     return encoder, x_scaler, y_scaler
 
 def preprocess_data(df, encoder, x_scaler):
