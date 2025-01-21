@@ -1,4 +1,4 @@
-# Rent in Brazil
+# Regression models: Rent in Brazil
 
 # Модель прогнозування вартості оренди в Бразилії
 
