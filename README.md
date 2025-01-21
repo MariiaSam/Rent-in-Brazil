@@ -2,7 +2,7 @@
 
 # A model for predicting the cost of rent in Brazil
 
-This project was developed to determine the cost of rent in Brazil. The interactive interface is based on [**Streamlit**] (https://rent-brazil1.streamlit.app/), which allows you to easily interact with the model and analyze the results.
+This project was developed to determine the cost of rent in Brazil. The interactive interface is based on [**Streamlit**](https://rent-brazil1.streamlit.app/), which allows you to easily interact with the model and analyze the results.
 
 <img src="images/4.jpg" alt="Опис зображення" width="500" height="300">
 
