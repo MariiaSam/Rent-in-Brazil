@@ -5,6 +5,10 @@ description = "Predicting the cost of rent in Brazil"
 authors = ["MariiaSam <kontragent@ukr.net>"]
 readme = "README.md"
 
+packages = [
+    { include = "." }
+]
+
 [tool.poetry.dependencies]
 python = "^3.12"
 numpy = "^2.2.1"
