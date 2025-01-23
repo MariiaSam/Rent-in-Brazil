@@ -1,4 +1,4 @@
-# Regression models: Rent in Brazil
+# Regression model: Rent in Brazil
 
 # A model for predicting the cost of rent in Brazil
 
@@ -6,7 +6,7 @@ This project was developed to determine the cost of rent in Brazil. The interact
 
 <img src="images/4.jpg" alt="Опис зображення" width="500" height="300">
 
-## Description.
+## Description
 
 **1. Project objective:** To create an analytical tool for researching the value of rents in Brazil, including various factors, including regions.
 
@@ -69,7 +69,7 @@ This dataset contains 10692 rental properties with 13 different characteristics:
 
 ## Correlation analysis conclusions for rent amount:
 
-![Correlation analysis conclusions for rent amount::](images/3.png)
+![Correlation analysis conclusions for rent amount](images/3.png)
 
 **_Correlation analysis conclusions for rent amount:_**
 
