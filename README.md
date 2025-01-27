@@ -4,7 +4,7 @@
 
 This project was developed to determine the cost of rent in Brazil. The interactive interface is based on [**Streamlit**](https://rent-brazil1.streamlit.app/), which allows you to easily interact with the model and analyze the results.
 
-<img src="images/4.jpg" alt="Опис зображення" width="500" height="300">
+<img src="images/4.jpg" alt="море" width="500" height="300">
 
 ## Description
 
@@ -109,7 +109,7 @@ Cities, for example, city_Belo Horizonte, city_Campinas: In cities with a negati
 
 ## Models:
 
-- the following models were tested in the project: **LinearRegression, Lasso, Ridge, ElasticNet, SVR, RandomForestRegressor**;
+- the following models were tested in the project: **LinearRegression; Linear regression with Lasso, Ridge, ElasticNet regularization; SVR, RandomForestRegressor**;
 
 - was used to select the best hyperparameters: GridSearchCV.
 
