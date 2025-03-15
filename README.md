@@ -10,7 +10,7 @@ This project was developed to determine the cost of rent in Brazil. The interact
 
 **1. Project objective:** To create an analytical tool for researching the value of rents in Brazil, including various factors, including regions.
 
-**2. Project tasks:**.
+**2. Project tasks:**
 
 - **Data analysis**: to identify the key factors that influence the cost;
 - **Model building**: using machine learning and statistical analyses to create a model that can predict rental values;
