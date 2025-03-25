@@ -207,11 +207,17 @@ Use the command to run a container based on your Docker Image:
 docker run --rm -d -p 8880:8880 rentinbrazil:latest
 ```
 
+```
 --rm - automatically removes the container after stopping;
+```
 
+```
 -d - runs the container in the background;
+```
 
+```
 -p 8880:8880 - displays port 8880 on the local machine to access the application.
+```
 
 **2. Access to the application:**
 
