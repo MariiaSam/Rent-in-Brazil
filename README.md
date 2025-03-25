@@ -199,7 +199,7 @@ streamlit run app.py
 
 This project also supports Docker containerization, which makes it easy to run the application without having to manually configure the environment.
 
-**1. Starting a project via Docker**
+**1. Starting a project with Docker**
 
 Use the command to run a container based on your Docker Image:
 
@@ -207,17 +207,11 @@ Use the command to run a container based on your Docker Image:
 docker run --rm -d -p 8880:8880 rentinbrazil:latest
 ```
 
-```
---rm - automatically removes the container after stopping;
-```
+- --rm - automatically removes the container after stopping;
 
-```
--d - runs the container in the background;
-```
+- -d - runs the container in the background;
 
-```
--p 8880:8880 - displays port 8880 on the local machine to access the application.
-```
+- -p 8880:8880 - displays port 8880 on the local machine to access the application.
 
 **2. Access to the application:**
 
